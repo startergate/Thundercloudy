@@ -1,4 +1,4 @@
-# thundercloudy
+# Thundercloudy
 
 Thundercloudy is better cloudy.
 
