@@ -1,4 +1,4 @@
-package com.example.thundercloudy;
+package com.startergate.thundercloudy;
 
 import org.junit.Test;
 
