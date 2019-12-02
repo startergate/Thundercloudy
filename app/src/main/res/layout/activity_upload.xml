@@ -10,35 +10,31 @@
         android:id="@+id/navigation"
         android:orientation="horizontal"
         android:rowCount="5">
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/border"
-            android:text="1"
             android:layout_weight="1"/>
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/border"
-            android:text="1"
             android:layout_weight="1"/>
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/border"
-            android:text="1"
             android:layout_weight="1"/>
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/border"
-            android:text="1"
             android:layout_weight="1"/>
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/border"
-            android:text="1"
+            android:src=""
             android:layout_weight="1"/>
     </LinearLayout>
 
