@@ -14,21 +14,27 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/border"
+            android:maxHeight="60dp"
+            android:maxWidth="60dp"
+            android:src="@drawable/main"
             android:layout_weight="1"/>
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/border"
+            android:src=""
             android:layout_weight="1"/>
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/border"
+            android:src=""
             android:layout_weight="1"/>
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/border"
+            android:src=""
             android:layout_weight="1"/>
         <ImageButton
             android:layout_width="match_parent"
