@@ -8,8 +8,7 @@
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:id="@+id/navigation"
-        android:orientation="horizontal"
-        android:rowCount="5">
+        android:orientation="horizontal" >
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
