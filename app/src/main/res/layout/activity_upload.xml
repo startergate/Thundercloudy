@@ -1,46 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <include layout="@layout/navigation"
+        android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/navigation"
-        android:orientation="horizontal" >
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/border"
-            android:maxHeight="60dp"
-            android:maxWidth="60dp"
-            android:src="@drawable/main"
-            android:layout_weight="1"/>
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/border"
-            android:src="@drawable/serach"
-            android:layout_weight="1"/>
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/border"
-            android:src="@drawable/plus"
-            android:layout_weight="1"/>
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/border"
-            android:src=""
-            android:layout_weight="1"/>
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/border"
-            android:src="@drawable/mypage"
-            android:layout_weight="1"/>
-    </LinearLayout>
+        android:layout_alignParentBottom="true" />
+
 
 </RelativeLayout>
