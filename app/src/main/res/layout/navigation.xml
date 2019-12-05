@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/border"
-        android:src=""
+        android:src="@drawable/album"
         android:layout_weight="1"/>
     <ImageButton
         android:layout_width="match_parent"
