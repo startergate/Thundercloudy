@@ -14,12 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/border"
-        android:src="@drawable/serach"
-        android:layout_weight="1"/>
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/border"
         android:src="@drawable/plus"
         android:layout_weight="1"/>
     <ImageButton
@@ -27,11 +21,5 @@
         android:layout_height="match_parent"
         android:background="@drawable/border"
         android:src="@drawable/album"
-        android:layout_weight="1"/>
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/border"
-        android:src="@drawable/mypage"
         android:layout_weight="1"/>
 </LinearLayout>
