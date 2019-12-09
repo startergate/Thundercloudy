@@ -80,5 +80,6 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="0dp"
         android:background="@drawable/background_for_signup"
+        android:id="@+id/signup"
         android:text="@string/don_t_have_an_account_sign_up"/>
 </RelativeLayout>
