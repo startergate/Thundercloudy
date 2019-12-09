@@ -57,7 +57,6 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
-                android:ems="9"
                 android:background="@drawable/border_for_login"
                 android:padding="10dp"
                 android:hint="@string/password" />
@@ -65,6 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:background="@drawable/border_for_login"
+                android:id="@+id/login"
                 android:text="@string/login"/>
         </LinearLayout>
         <TextView
