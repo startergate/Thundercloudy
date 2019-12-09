@@ -9,17 +9,20 @@
         android:maxHeight="60dp"
         android:maxWidth="60dp"
         android:src="@drawable/main"
+        android:id="@+id/btn_main"
         android:layout_weight="1"/>
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/border"
         android:src="@drawable/plus"
+        android:id="@+id/btn_add"
         android:layout_weight="1"/>
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/border"
         android:src="@drawable/album"
+        android:id="@+id/btn_cloud"
         android:layout_weight="1"/>
 </LinearLayout>
