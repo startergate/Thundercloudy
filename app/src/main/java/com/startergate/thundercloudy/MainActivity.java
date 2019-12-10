@@ -66,7 +66,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (id_enter.getText().toString().equals("")) {
-                    Toast.makeText(sup, "ID를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "ID를 입력해주세요.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (pw_enter.getText().toString().equals("")) {
+                    Toast.makeText(getApplicationContext(), "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -87,7 +91,8 @@ public class MainActivity extends AppCompatActivity {
                         }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        // failed
+                        Toast.makeText(getApplicationContext(), "Server Not Available.", Toast.LENGTH_SHORT).show();
+                        Log.e("failed", error.toString());
                     }
                 });
 
