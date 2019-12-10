@@ -53,13 +53,15 @@
                 android:ems="13"
                 android:background="@drawable/border_for_login"
                 android:padding="10dp"
-                android:hint="@string/id" />
+                android:hint="@string/id"
+                android:id="@+id/id_enter" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
                 android:background="@drawable/border_for_login"
                 android:padding="10dp"
-                android:hint="@string/password" />
+                android:hint="@string/password"
+                android:id="@+id/pw_enter" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
