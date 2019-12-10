@@ -16,25 +16,12 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.HashMap;
-import java.util.Map;
-
-import javax.net.ssl.HttpsURLConnection;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -86,7 +73,17 @@ public class MainActivity extends AppCompatActivity {
                         new Response.Listener<JSONObject>() {
                             @Override
                             public void onResponse(JSONObject response) {
-                                Log.e("response", response.toString());
+                                // Log.e("response", response.toString());
+                                Intent intent = new Intent(MainActivity.this, SnsActivity.class);
+                                try {
+                                    intent.putExtra("sessid", response.getString("sessid"));
+                                    intent.putExtra("pid", response.getString("pid"));
+                                    intent.putExtra("nickname", response.getString("nickname"));
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                                startActivity(intent);
+                                return;
                             }
                         }, new Response.ErrorListener() {
                     @Override
