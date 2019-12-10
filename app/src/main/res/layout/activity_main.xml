@@ -61,6 +61,7 @@
                 android:background="@drawable/border_for_login"
                 android:padding="10dp"
                 android:hint="@string/password"
+                android:inputType="textPassword"
                 android:id="@+id/pw_enter" />
             <Button
                 android:layout_width="match_parent"
