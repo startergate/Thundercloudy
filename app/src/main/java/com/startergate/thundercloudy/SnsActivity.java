@@ -9,8 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.json.JSONException;
-
 public class SnsActivity extends AppCompatActivity {
 
     ImageButton btn_main, btn_add, btn_cloud;
