@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Log.println(Log.INFO, "started", "started");
+
         signup = findViewById(R.id.signup);
         login = findViewById(R.id.login);
         id_enter = findViewById(R.id.id_enter);
@@ -83,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                                     e.printStackTrace();
                                 }
                                 startActivity(intent);
-                                return;
+                                MainActivity.this.finish();
                             }
                         }, new Response.ErrorListener() {
                     @Override
