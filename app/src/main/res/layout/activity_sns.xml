@@ -5,19 +5,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".SnsActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginVertical="40dp"
-            android:textSize="40sp"
-            android:id="@+id/user_welcome"
-            android:text="안녕하세요, {USERNAME} 님"/>
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="40dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:id="@+id/user_welcome"
+                android:text="안녕, {USERNAME}?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/content_view"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/post">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="sdf" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    style="@style/post">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="sdf" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
     </ScrollView>
 
     <include layout="@layout/navigation"

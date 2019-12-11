@@ -13,4 +13,11 @@
         <item name="android:windowAnimationStyle">@null</item>
     </style>
 
+    <style name="post" parent="android:Theme">
+        <item name="android:padding">30dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@color/gainsboro</item>
+        <item name="android:layout_marginHorizontal">20dp</item>
+    </style>
+
 </resources>
