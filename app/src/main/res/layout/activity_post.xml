@@ -1,7 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gainsboro_radius"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_for_login"
+            android:padding="10dp"
+            android:lines="1"
+            android:hint="@string/enter_title"
+            android:id="@+id/title"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/border_for_login"
+            android:padding="10dp"
+            android:hint="@string/enter_contents"
+            android:gravity="start"
+            android:id="@+id/content"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_for_login"
+                android:text="@string/select_image"
+                android:layout_weight="1"
+                android:id="@+id/select_image"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_for_login"
+                android:text="@string/send"
+                android:layout_weight="1"
+                android:id="@+id/send"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
 
     <include layout="@layout/navigation"
         android:id="@+id/navigation"

@@ -5,4 +5,8 @@
     <string name="login">Login</string>
     <string name="forgot_your_password">Forgot your password?</string>
     <string name="don_t_have_an_account_sign_up">Don\'t Have an Account? Sign Up!</string>
+    <string name="select_image">이미지 선택</string>
+    <string name="enter_title">제목 입력</string>
+    <string name="enter_contents">내용 입력</string>
+    <string name="send">작성</string>
 </resources>
