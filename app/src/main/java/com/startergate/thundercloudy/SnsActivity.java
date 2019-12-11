@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,8 @@ import org.json.JSONException;
 public class SnsActivity extends AppCompatActivity {
 
     ImageButton btn_main, btn_add, btn_cloud;
+
+    TextView user_welcome;
 
     SidData sidData;
 
@@ -29,6 +32,9 @@ public class SnsActivity extends AppCompatActivity {
         btn_main = findViewById(R.id.btn_main);
         btn_add = findViewById(R.id.btn_add);
         btn_cloud = findViewById(R.id.btn_cloud);
+        user_welcome = findViewById(R.id.user_welcome);
+
+        user_welcome.setText(user_welcome.getText().toString().replace("{USERNAME}", sidData.nickname));
 
         btn_main.setBackgroundResource(R.drawable.border_activated);
 
