@@ -53,6 +53,7 @@
                 android:ems="13"
                 android:background="@drawable/border_for_login"
                 android:padding="10dp"
+                android:singleLine="true"
                 android:hint="@string/id"
                 android:id="@+id/id_enter" />
             <EditText
@@ -60,6 +61,7 @@
                 android:layout_height="61dp"
                 android:background="@drawable/border_for_login"
                 android:padding="10dp"
+                android:singleLine="true"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:id="@+id/pw_enter" />
