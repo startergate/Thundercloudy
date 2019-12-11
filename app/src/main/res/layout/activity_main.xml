@@ -55,7 +55,9 @@
                 android:padding="10dp"
                 android:lines="1"
                 android:hint="@string/id"
-                android:id="@+id/id_enter" />
+                android:id="@+id/id_enter"
+                android:inputType="text"
+                android:importantForAutofill="no" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
@@ -64,7 +66,8 @@
                 android:lines="1"
                 android:hint="@string/password"
                 android:inputType="textPassword"
-                android:id="@+id/pw_enter" />
+                android:id="@+id/pw_enter"
+                android:importantForAutofill="no" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
@@ -76,6 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:id="@+id/forgot_password"
             android:text="@string/forgot_your_password"/>
     </LinearLayout>
 

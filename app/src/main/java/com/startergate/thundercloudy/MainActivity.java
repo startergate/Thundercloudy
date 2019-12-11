@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button signup, login;
     EditText id_enter, pw_enter;
+    TextView forgot_password;
 
     String clientid = "UAiiUAl5GLyVwNoBFUYwtD2uJPHa4gNVWelx0H2AIGiW5zuzZ5lDCK02e6hcRX5e";
 
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         login = findViewById(R.id.login);
         id_enter = findViewById(R.id.id_enter);
         pw_enter = findViewById(R.id.pw_enter);
+        forgot_password = findViewById(R.id.forgot_password);
 
         final RequestQueue queue = Volley.newRequestQueue(this);
 
@@ -98,6 +101,13 @@ public class MainActivity extends AppCompatActivity {
                 // Add the request to the RequestQueue.
                 queue.add(request);
                 // startActivity(new Intent()); // whatever. fuck
+            }
+        });
+
+        forgot_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Woo. That's Too Bad. But we are planning to do nothing.", Toast.LENGTH_LONG).show();
             }
         });
     }
