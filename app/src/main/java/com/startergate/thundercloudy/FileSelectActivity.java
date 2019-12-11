@@ -48,10 +48,9 @@ public class FileSelectActivity extends AppCompatActivity {
         upload_content.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                // Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
-                // photoPickerIntent.setType("image/*");
-                // FileSelectActivity.this.startActivityForResult(photoPickerIntent, 0);
+                Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
+                photoPickerIntent.setType("image/*");
+                FileSelectActivity.this.startActivityForResult(photoPickerIntent, 0);
             }
         });
     }
@@ -60,11 +59,12 @@ public class FileSelectActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         Log.d("SDF", Integer.toString(requestCode));
+        String filePath = null;
         if (requestCode == 0)
             if (resultCode == Activity.RESULT_OK) {
                 Uri selectedImage = data.getData();
 
-                String filePath = selectedImage.getPath();
+                filePath = selectedImage.getPath();
                 String file_extn = filePath.substring(filePath.lastIndexOf(".") + 1);
 
                 Log.d("sdf", filePath);
@@ -76,6 +76,7 @@ public class FileSelectActivity extends AppCompatActivity {
 
                         //calling the method uploadBitmap to upload image
                         uploadBitmap(bitmap);
+
                     } else {
                         //NOT IN REQUIRED FORMAT
                     }
@@ -86,6 +87,12 @@ public class FileSelectActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
+        Intent intent = new Intent(getApplicationContext(), FileSelectActivity.class);
+
+        intent.putExtra("image_name", filePath);
+
+        setResult(RESULT_OK, intent);
+        finish();
     }
 
     public byte[] getFileDataFromDrawable(Bitmap bitmap) {
